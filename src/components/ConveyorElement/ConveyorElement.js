@@ -16,6 +16,7 @@ class ConveyorElement extends PureComponent {
   findIcon = name => ingredients.find(ing => ing.name === name).icon;
   handleClick = event => {
     const { addIngredient, name } = this.props;
+
     addIngredient(name, event.target.dataset.icon);
   };
 
